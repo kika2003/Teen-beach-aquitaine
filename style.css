@@ -1,0 +1,121 @@
+body {
+    font-family: 'Poetsen One', sans-serif;
+    margin: 10px; /* Correction de l'unité */
+    padding: 10px; /* Correction de l'unité */
+    background-color: #39BFB2;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrer les éléments horizontalement */
+    
+}
+
+.navbar {
+    background-color: #FCF6DC;
+    color: #F29849;
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Remplir l'espace horizontal */
+    margin-bottom: 20px; /* Ajout de marge en bas */
+}
+
+.logo {
+    width: 350px;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.banner {
+    background-image: url('your-background-image-url.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    width: 100%; /* Remplir l'espace horizontal */
+    margin-bottom: 20px; /* Ajout de marge en bas */
+}
+
+.spots {
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap; /* Permettre le retour à la ligne des éléments */
+    justify-content: space-between; /* Espacement égal entre les éléments */
+}
+
+.spot-card {
+    width: calc(33.33% - 20px); /* Réduire la largeur pour s'adapter à la disposition */
+    margin-bottom: 30px;
+}
+
+.spot-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#biarritz, #bourdaines, #lacanau, #deux-jumeaux, #lette-blanche {
+    background-color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.spot-details h3 {
+    margin-top: 0;
+    color: #F26E50;
+}
+
+.spot-details p {
+    line-height: 1.6;
+}
+
+.spot-details ul {
+    padding-left: 20px;
+}
+
+.spot-details a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #127369;
+    transition: color 0.3s ease;
+}
+
+.spot-details a:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+}
+
+/* Ligne séparatrice entre les liens */
+.banner .youtube-link::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    margin: 10px auto;
+}
+
+/* Hover pour les liens */
+.youtube-link:hover,
+.nouvelle-aquitaine-link:hover {
+    text-decoration: underline;
+    color: #1E90FF;
+}
+
+/* Centrage des images */
+.biarritz img,
+.bourdaines img,
+.lacanau img,
+.deux-jumeaux img,
+.lette-blanche img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
